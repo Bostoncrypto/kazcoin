@@ -1441,7 +1441,7 @@ string CWallet::SendMoneyToDestination(const CTxDestination& address, int64 nVal
     // Check amount
     if (nValue <= 0)
         return _("Invalid amount");
-    if (nValue + nTransactionFee > GetBalance())
+    if (nValue + nTransactionFee > GetBalance""())
         return _("Insufficient funds");
 
     // Parse Bitcoin address
